@@ -18,13 +18,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { DemoDragdropComponent } from './components/demo/demo-dragdrop/demo-dragdrop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { DemoTreeComponent } from './components/demo/demo-tree/demo-tree.component';
+import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
   declarations: [
     AppComponent,
     DemoAddressformComponent,
     DemoNavigationComponent,
-    DemoDragdropComponent
+    DemoDragdropComponent,
+    DemoTreeComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    DragDropModule
+    DragDropModule,
+    MatTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
