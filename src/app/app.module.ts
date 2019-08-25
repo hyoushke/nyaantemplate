@@ -16,12 +16,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { DemoDragdropComponent } from './components/demo/demo-dragdrop/demo-dragdrop.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
     AppComponent,
     DemoAddressformComponent,
-    DemoNavigationComponent
+    DemoNavigationComponent,
+    DemoDragdropComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
