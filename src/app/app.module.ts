@@ -23,6 +23,10 @@ import { MatTreeModule } from '@angular/material/tree';
 import { DemoDashboardComponent } from './components/demo/demo-dashboard/demo-dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
+import { DemoTableComponent } from './components/demo/demo-table/demo-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,8 @@ import { MatMenuModule } from '@angular/material/menu';
     DemoNavigationComponent,
     DemoDragdropComponent,
     DemoTreeComponent,
-    DemoDashboardComponent
+    DemoDashboardComponent,
+    DemoTableComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +55,10 @@ import { MatMenuModule } from '@angular/material/menu';
     DragDropModule,
     MatTreeModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
