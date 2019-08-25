@@ -20,6 +20,9 @@ import { DemoDragdropComponent } from './components/demo/demo-dragdrop/demo-drag
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { DemoTreeComponent } from './components/demo/demo-tree/demo-tree.component';
 import { MatTreeModule } from '@angular/material/tree';
+import { DemoDashboardComponent } from './components/demo/demo-dashboard/demo-dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,8 @@ import { MatTreeModule } from '@angular/material/tree';
     DemoAddressformComponent,
     DemoNavigationComponent,
     DemoDragdropComponent,
-    DemoTreeComponent
+    DemoTreeComponent,
+    DemoDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import { MatTreeModule } from '@angular/material/tree';
     MatIconModule,
     MatListModule,
     DragDropModule,
-    MatTreeModule
+    MatTreeModule,
+    MatGridListModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
